@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Badrinadh Gada - Full Stack Developer</title>
+    <style>
+      @keyframes reloadEffect {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        
+          
+      }.reload-animation {
+          display: inline-block;
+          animation: reloadEffect 2s linear infinite;
+          margin-left: 10px;
+      }
+     #connect-btn{
+        /* background-color: #4CAF50; Button background */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Space inside button */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Text size */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s ease;
+        border-radius: 5px;
+     }
+     .footer {
+        background-color: #333; 
+        color: white; 
+        text-align: center; 
+        padding: 10px 0; 
+        position: relative;
+        bottom: 0;
+        width: 100%; 
+     }
+
+
+ 
+    </style>
+    <script>
+      
+    </script>
+
+   
+</head>
+<body>
+
+      <div class="header1">
+    
+            <h1>BG</h1>
+          
+            <div class="navbar">
+              <div class="nav-link" id="reload-link">
+                <ul>
+                  <li><a href="#home" >Home</a></li>
+                  <li><a href="#skills">skills</a></li>
+                  <li><a href="#projects">project</a></li>
+                  <li><a href="#experience">Experience</a></li>
+                  <!-- <li id="connect-btn"><button onclick="openmail()"> Lets Connect </button></li> -->
+                </ul>
+              </div>
+            </div>
+            <button id="connect-btn" onclick="openmail()"> Let's Connect </button>
+      </div>
+    
+    <div class="container">
+        <!-- Header Section -->
+      
+        <header class="header" id="home" b>
+            <div class="profile-photo" >
+              <img src="/1.jpg" alt="badrinadh Gada">
+            </div>
+            
+
+            <h1>Badrinadh Gada</h1>
+            <p>Full Stack Java Developer</p>
+            <div class="contact-info">
+                <div class="contact-item" onclick="openmail()" style="cursor: pointer;">
+                    <span class="icon">✉</span> badrinadhgada0510@gmail.com
+                </div>
+                <div class="contact-item" >
+                    <span class="icon">📍</span> USA
+                </div>
+                <div class="contact-item" onclick="linkedinlink()" style="cursor: pointer;">
+                    <span class="icon">💼   </span> LinkedIn Profile
+                </div>
+                
+                <div class="contact-item" onclick="githublink()" style="cursor: pointer;">
+                    <span class="icon">⚡</span> GitHub Profile
+                </div>
+            </div>      
+        </header>
+
+        <!-- Professional Summary -->
+        <section class="section">
+            <h2><span class="icon">👨‍💻</span>Professional Summary</h2>
+            <p>Full Stack Java Developer with 3 years of experience in developing robust, scalable web applications using <strong>Java, Spring Boot, React.js, MySQL</strong>, and cloud technologies (<strong>AWS & Azure</strong>). Proven ability to build secure APIs, interactive frontends, and CI/CD pipelines. Hands-on experience with client projects at <strong>Cabot Corp (Boston, MA)</strong> and <strong>Mastercard USA</strong>, focusing on digital transformation, cloud deployment, and performance optimization.</p>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="section" id="skills">
+            <h2><span class="icon">🛠</span>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <p>React.js, HTML5, CSS3, JavaScript (ES6+), Redux, Bootstrap</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <p>Java 8+, Spring Boot, Spring MVC, Hibernate, RESTful APIs, Microservices</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <p>MySQL, PostgreSQL, Oracle</p>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps & Tools</h3>
+                    <p>Maven, Git, GitHub, Jenkins, JUnit, Postman, Swagger, Docker, Kubernetes</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud Platforms</h3>
+                    <p>AWS (EC2, S3, Lambda), Microsoft Azure</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Other Tools</h3>
+                    <p>Agile/Scrum, Cisco Networking Fundamentals</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section class="section" id="certifications">
+            <h2><span class="icon">🏆</span>Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-item">AWS Certified Cloud Practitioner</div>
+                <div class="cert-item">Microsoft Certified: Azure Fundamentals</div>
+                <div class="cert-item">Microsoft Certified: Azure Data Fundamentals</div>
+                <div class="cert-item">Cisco Certified: Networking Essentials</div>
+            </div>
+        </section>
+
+        <!-- Professional Experience -->
+        <section class="section" id="experience">
+            <h2><span class="icon">💼</span>Professional Experience</h2>
+            
+            <div class="experience-item">
+                <h3>Full Stack Java Developer</h3>
+                <div class="company">Mastercard USA | Client: Mastercard Financial Gateway</div>
+                <div class="date">Aug 2024 - Present</div>
+                <ul>
+                    <li>Engineered scalable Spring Boot microservices for Mastercard's high-throughput payment gateway system</li>
+                    <li>Integrated AWS Lambda and S3 for transaction validation and secure document storage</li>
+                    <li>Designed React-based web interfaces for fraud analysis and auditing workflows</li>
+                    <li>Configured CI/CD pipelines and deployed services via Docker containers in a multi-cloud (AWS/Azure) architecture</li>
+                    <li>Participated in agile ceremonies, delivering functional increments every sprint</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Full Stack Java Developer</h3>
+                <div class="company">Cognizant Technology Solutions | Client: Cabot Corp, Boston, MA</div>
+                <div class="date">Aug 2021 - July 2023</div>
+                <ul>
+                    <li>Developed REST APIs using Spring Boot to handle high-volume logistics and order workflows</li>
+                    <li>Designed interactive React.js dashboards to visualize KPIs for manufacturing and operations teams</li>
+                    <li>Implemented secure Azure Active Directory authentication for internal tools</li>
+                    <li>Built reusable UI components and optimized MySQL queries, improving system efficiency by 30%</li>
+                    <li>Contributed to end-to-end CI/CD pipelines using Jenkins and Docker for clean deployments</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section" id="projects">     
+            <h2><span class="icon">🚀</span>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Cancer Data Analysis</h3>
+                    <div class="tech-stack">React + Java + Azure</div>
+                  
+                    <ul>
+                        <li>Created a full-stack web app for researchers to analyze 10 years of cancer data using React.js frontend and Spring Boot APIs</li>
+                        <li>Hosted on AWS with EC2 and S3 storage, leveraging real-time charts and filters</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <h3>Full Stack Healthcare Insights Platform</h3>
+                    <div class="tech-stack">React + Spring Boot + Azure SQL + PostgreSQL</div>
+                  
+                    <ul>
+                        <li>Developing a data-intensive application designed to provide real-time hospital analytics and patient insights</li>
+                        <li>Full details saved for later expansion</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <h3>Wedding Event Website</h3>
+                    <div class="tech-stack">HTML, CSS, PHP</div>
+                   
+                    <ul>
+                        <li>Built a dynamic event website to handle guest RSVP, schedules, and admin dashboard</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <h3>IoT Smart Energy Meter</h3>
+                    <div class="tech-stack">Java + Embedded</div>
+                    
+                    <ul>
+                        <li>Designed a Java-Arduino based system to measure and transmit power usage in real-time</li>
+                        <li>Features a web dashboard for analytics</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="section">
+            <h2><span class="icon">🎓</span>Education</h2>
+            
+            <div class="education-item">
+                <h3>Master of Science in Computer Science (Software Engineering)</h3>
+                <div class="school">University of Missouri - Kansas City, USA</div>
+                <div class="date">Aug 2023 - May 2025</div>
+            </div>
+
+            <div class="education-item">
+                <h3>Bachelor of Engineering in Electronics & Communication Engineering</h3>
+                <div class="school">RMD Engineering College, Anna University - Tamil Nadu, India</div>
+                <div class="date">2018 - 2022</div>
+            </div>
+        </section>
+    </div>
+
+
+    <footer class="footer">
+        <p>&copy; 2025 Badrinadh Gada. All rights reserved.</p>  
+</body>
+</html>
