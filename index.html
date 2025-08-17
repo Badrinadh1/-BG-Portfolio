@@ -3,96 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>Badrinadh Gada - Full Stack Developer</title>
-    <style>
-      @keyframes reloadEffect {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
-        
-          
-      }.reload-animation {
-          display: inline-block;
-          animation: reloadEffect 2s linear infinite;
-          margin-left: 10px;
-      }
-     #connect-btn{
-        /* background-color: #4CAF50; Button background */
-  color: white; /* Text color */
-  padding: 10px 20px; /* Space inside button */
-  border: none; /* Remove default border */
-  border-radius: 5px; /* Rounded corners */
-  font-size: 16px; /* Text size */
-  cursor: pointer; /* Pointer on hover */
-  transition: background-color 0.3s ease;
-        border-radius: 5px;
-     }
-     .footer {
-        background-color: #333; 
-        color: white; 
-        text-align: center; 
-        padding: 10px 0; 
-        position: relative;
-        bottom: 0;
-        width: 100%; 
-     }
-
-
- 
-    </style>
-    <script>
-      
-    </script>
-
-   
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="particles" id="particles"></div>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+    <!-- Navigation -->
+    <div class="header1">
+        <div class="logo">BG</div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+            </ul>
+        </div>
+        <button id="connect-btn" onclick="window.location.href='mailto:badrinadhgada0510@gmail.com'">Let's Connect</button>
+  
 
-      <div class="header1">
-    
-            <h1>BG</h1>
-          
-            <div class="navbar">
-              <div class="nav-link" id="reload-link">
-                <ul>
-                  <li><a href="#home" >Home</a></li>
-                  <li><a href="#skills">skills</a></li>
-                  <li><a href="#projects">project</a></li>
-                  <li><a href="#experience">Experience</a></li>
-                  <!-- <li id="connect-btn"><button onclick="openmail()"> Lets Connect </button></li> -->
-                </ul>
-              </div>
-            </div>
-            <button id="connect-btn" onclick="openmail()"> Let's Connect </button>
-      </div>
-    
+    </div>
     <div class="container">
-        <!-- Header Section -->
-      
-        <header class="header" id="home" b>
-            <div class="profile-photo" >
-              <img src="/1.jpg" alt="badrinadh Gada">
+        <!-- Hero Section -->
+        <header class="header fade-in" id="home">
+            <div class="profile-photo">
+                <img src="/1.jpg" alt="Badrinadh Gada">
             </div>
-            
-
             <h1>Badrinadh Gada</h1>
-            <p>Full Stack Java Developer</p>
+            <p class="subtitle"><span class="typing-text">Full Stack Java Developer</span></p>
             <div class="contact-info">
-                <div class="contact-item" onclick="openmail()" style="cursor: pointer;">
-                    <span class="icon">✉</span> badrinadhgada0510@gmail.com
+                <div class="contact-item" onclick="openmail()">
+                    <span class="icon">✉️</span> badrinadhgada0510@gmail.com
                 </div>
-                <div class="contact-item" >
+                <div class="contact-item">
                     <span class="icon">📍</span> USA
                 </div>
-                <div class="contact-item" onclick="linkedinlink()" style="cursor: pointer;">
-                    <span class="icon">💼   </span> LinkedIn Profile
+                <div class="contact-item" onclick="linkedinlink()">
+                    <span class="icon">💼</span> LinkedIn Profile
                 </div>
-                
-                <div class="contact-item" onclick="githublink()" style="cursor: pointer;">
+                <div class="contact-item" onclick="githublink()">
                     <span class="icon">⚡</span> GitHub Profile
                 </div>
-            </div>      
+            </div>
         </header>
 
         <!-- Professional Summary -->
@@ -103,11 +60,11 @@
 
         <!-- Technical Skills -->
         <section class="section" id="skills">
-            <h2><span class="icon">🛠</span>Technical Skills</h2>
+            <h2><span class="icon">🛠️</span>Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
                     <h3>Frontend</h3>
-                    <p>React.js, HTML5, CSS3, JavaScript (ES6+), Redux, Bootstrap</p>
+                    <p>React.js, HTML5, CSS3, JavaScript (ES6+), Redux, Bootstrap, Material-UI</p>
                 </div>
                 <div class="skill-category">
                     <h3>Backend</h3>
@@ -115,7 +72,7 @@
                 </div>
                 <div class="skill-category">
                     <h3>Databases</h3>
-                    <p>MySQL, PostgreSQL, Oracle</p>
+                    <p>MySQL, PostgreSQL, Oracle, MongoDB</p>
                 </div>
                 <div class="skill-category">
                     <h3>DevOps & Tools</h3>
@@ -146,7 +103,6 @@
         <!-- Professional Experience -->
         <section class="section" id="experience">
             <h2><span class="icon">💼</span>Professional Experience</h2>
-            
             <div class="experience-item">
                 <h3>Full Stack Java Developer</h3>
                 <div class="company">Mastercard USA | Client: Mastercard Financial Gateway</div>
@@ -159,7 +115,6 @@
                     <li>Participated in agile ceremonies, delivering functional increments every sprint</li>
                 </ul>
             </div>
-
             <div class="experience-item">
                 <h3>Full Stack Java Developer</h3>
                 <div class="company">Cognizant Technology Solutions | Client: Cabot Corp, Boston, MA</div>
@@ -175,45 +130,43 @@
         </section>
 
         <!-- Projects -->
-        <section class="section" id="projects">     
+        <section class="section" id="projects">
             <h2><span class="icon">🚀</span>Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3>Cancer Data Analysis</h3>
-                    <div class="tech-stack">React + Java + Azure</div>
-                  
+                    <h3>Cancer Data Analysis Platform</h3>
+                    <div class="tech-stack">React + Java + AWS</div>
                     <ul>
                         <li>Created a full-stack web app for researchers to analyze 10 years of cancer data using React.js frontend and Spring Boot APIs</li>
-                        <li>Hosted on AWS with EC2 and S3 storage, leveraging real-time charts and filters</li>
+                        <li>Hosted on AWS with EC2 and S3 storage, leveraging real-time charts and advanced filtering capabilities</li>
+                        <li>Implemented data visualization using Chart.js and D3.js for interactive insights</li>
                     </ul>
                 </div>
-
                 <div class="project-card">
-                    <h3>Full Stack Healthcare Insights Platform</h3>
+                    <h3>Healthcare Insights Platform</h3>
                     <div class="tech-stack">React + Spring Boot + Azure SQL + PostgreSQL</div>
-                  
                     <ul>
                         <li>Developing a data-intensive application designed to provide real-time hospital analytics and patient insights</li>
-                        <li>Full details saved for later expansion</li>
+                        <li>Implemented microservices architecture for scalable data processing</li>
+                        <li>Features predictive analytics and machine learning integration for patient care optimization</li>
                     </ul>
                 </div>
-
                 <div class="project-card">
-                    <h3>Wedding Event Website</h3>
-                    <div class="tech-stack">HTML, CSS, PHP</div>
-                   
+                    <h3>Wedding Event Management</h3>
+                    <div class="tech-stack">HTML5 + CSS3 + PHP + MySQL</div>
                     <ul>
-                        <li>Built a dynamic event website to handle guest RSVP, schedules, and admin dashboard</li>
+                        <li>Built a dynamic event website to handle guest RSVP, schedules, and comprehensive admin dashboard</li>
+                        <li>Implemented real-time notifications and payment integration</li>
+                        <li>Features responsive design and cross-browser compatibility</li>
                     </ul>
                 </div>
-
                 <div class="project-card">
                     <h3>IoT Smart Energy Meter</h3>
-                    <div class="tech-stack">Java + Embedded</div>
-                    
+                    <div class="tech-stack">Java + Arduino + IoT</div>
                     <ul>
                         <li>Designed a Java-Arduino based system to measure and transmit power usage in real-time</li>
-                        <li>Features a web dashboard for analytics</li>
+                        <li>Features a comprehensive web dashboard for analytics and energy consumption tracking</li>
+                        <li>Implemented data logging and alert systems for energy optimization</li>
                     </ul>
                 </div>
             </div>
@@ -222,23 +175,36 @@
         <!-- Education -->
         <section class="section">
             <h2><span class="icon">🎓</span>Education</h2>
-            
             <div class="education-item">
                 <h3>Master of Science in Computer Science (Software Engineering)</h3>
                 <div class="school">University of Missouri - Kansas City, USA</div>
                 <div class="date">Aug 2023 - May 2025</div>
             </div>
-
             <div class="education-item">
                 <h3>Bachelor of Engineering in Electronics & Communication Engineering</h3>
                 <div class="school">RMD Engineering College, Anna University - Tamil Nadu, India</div>
                 <div class="date">2018 - 2022</div>
             </div>
         </section>
+
+        <!-- Research & Publications -->
+        <section class="section" id="research">
+            <h2><span class="icon">🔬</span>Research & Publications</h2>
+            <div class="education-item" style="border-left: 5px solid var(--accent-color);">
+                <h3>Medicine Delivering and Patient Parameter Monitoring Robot (Medrobo)</h3>
+                <div class="school" style="color: var(--text-secondary);">Published in the International Journal of Research Publication and Reviews (Volume 3, Issue 5, 2022)</div>
+                <p style="margin-top: 10px; color: var(--text-secondary);">Authored and published a research paper on a robot designed for medicine delivery and patient monitoring.</p>
+                <a href="https://www.linkedin.com/posts/badrinadh-gada-8513b5184_connections-activity-7069979959137599488-_vm4?utm_source=share&utm_medium=member_desktop&rcm=ACoAACt8RX0BBISs7kYBY7reoC4GL5j94pMog80" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 15px; color: var(--accent-color); font-weight: 600;">View on LinkedIn &rarr;</a>
+            </div>
+        </section>
     </div>
 
-
+    <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 Badrinadh Gada. All rights reserved.</p>  
+        <p>&copy; 2025 Badrinadh Gada. All rights reserved. Made with ❤️ and lots of ☕</p>
+    </footer>
+
+    <!-- JavaScript Link -->
+    <script src="script.js"></script>
 </body>
 </html>
